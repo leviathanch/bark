@@ -74,6 +74,10 @@ for _, lang in SUPPORTED_LANGS:
         for n in range(10):
             ALLOWED_PROMPTS.add(f"{prefix}{lang}_speaker_{n}")
 
+for n in range(10):
+	ALLOWED_PROMPTS.add(f"{prefix}custom_speaker_{n}")
+
+print(ALLOWED_PROMPTS)
 
 logger = logging.getLogger(__name__)
 
